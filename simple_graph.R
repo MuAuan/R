@@ -1,0 +1,13 @@
+x <- c(1:10)
+y <- c(1:10)
+g1 = plot(x,y)
+par(new=T)
+#y <- c(10:1)
+g2=plot(x,log(y))
+axis(side=4)
+
+x <- rnorm(100)                                       
+hist(x, xlim=c(-4,4), ylim=c(0,0.5), prob=T, ann=F)
+par(new=T)                                         
+plot(density(x), xlim=c(-4,4), ylim=c(0,0.5),  xlab="" , ylab="" , main="" , col="red" )   
+axis(side=4)
